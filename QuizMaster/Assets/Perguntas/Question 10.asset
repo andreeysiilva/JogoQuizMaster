@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
+  m_Name: Question 10
+  m_EditorClassIdentifier: 
+  question: "A atividade de brincar tem import\xE2ncia fundamental na forma\xE7\xE3o
+    da crian\xE7a, entre outras raz\xF5es, porque"
+  answers:
+  - "\xE9 a maneira mais simples de a crian\xE7a realizar plenamente todos os seus
+    desejos e anseios, independente de regras e determina\xE7\xF5es pr\xE9vias. "
+  - "a crian\xE7a interioriza suas vontades e desejos, introjetando a\xE7\xF5es e
+    emo\xE7\xF5es e desenvolvendo sua capacidade de receber ordens e sempre fazer
+    o que lhe dizem."
+  - "a crian\xE7a aprende regras e sentimentos, como frustra\xE7\xF5es de perda e
+    alegrias da vit\xF3ria, descobrindo como lidar com os sentimentos bons ou ruins. "
+  - "proporciona o desenvolvimento da crian\xE7a, possibilitando a separa\xE7\xE3o
+    e a clara distin\xE7\xE3o entre o mundo real e o mundo da imagina\xE7\xE3o."
+  correctAnswerIndex: 2

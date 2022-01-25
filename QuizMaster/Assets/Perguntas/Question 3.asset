@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
+  m_Name: Question 3
+  m_EditorClassIdentifier: 
+  question: "Participa\xE7\xE3o em atividades pedag\xF3gicas na escola e extracurriculares,
+    excluindo aquelas ligadas a entidades estudantis."
+  answers:
+  - "prazer \u2013 simboliza\xE7\xE3o \u2013 cria\xE7\xE3o"
+  - "representa\xE7\xE3o \u2013 a\xE7\xE3o \u2013 submiss\xE3o"
+  - "repeti\xE7\xE3o \u2013 intera\xE7\xE3o \u2013 organiza\xE7\xE3o"
+  - "descoberta \u2013 passividade \u2013 reflex\xE3o"
+  - "estimula\xE7\xE3o \u2013 aliena\xE7\xE3o \u2013 socializa\xE7\xE3o"
+  correctAnswerIndex: 2

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
+  m_Name: Question 9
+  m_EditorClassIdentifier: 
+  question: "Na educa\xE7\xE3o infantil a brincadeira constitui-se principalmente
+    em uma atividade que:"
+  answers:
+  - Pouco contribui para o desenvolvimento cognitivo infantil.
+  - "Contribui somente para o desenvolvimento psicomotor da crian\xE7a."
+  - Promove conflitos e por isso deve ser sempre controlada pelo professor.
+  - "Deve fazer parte do planejamento do professor pois \xE9 uma forma da crian\xE7a
+    se estruturar como sujeito da emo\xE7\xE3o e da raz\xE3o. "
+  correctAnswerIndex: 3
