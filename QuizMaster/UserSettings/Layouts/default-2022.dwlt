@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1360
     height: 621
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/andreysilva/Documentos/Projetos-GitHub/JogoQuizMaster/QuizMaster
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5c5e0000
-    m_LastClickedID: 24156
-    m_ExpandedIDs: 000000004a5e00004c5e0000
+    m_SelectedIDs: 605e0000
+    m_LastClickedID: 24160
+    m_ExpandedIDs: 000000004c5e00004e5e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a5e00004c5e0000
+    m_ExpandedIDs: 000000004c5e00004e5e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 2cfbffff805d0000ae5d0000
+      m_SelectedIDs: 08f9ffff
+      m_LastClickedID: -1784
+      m_ExpandedIDs: 2cfbffff805d0000ae5d0000bc5d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -805,9 +805,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1186.3837, y: 467.15366, z: -2.0128102}
+    m_Target: {x: 800.4486, y: 612.65533, z: -4.7620144}
     speed: 2
-    m_Value: {x: 1196.4156, y: 476.0475, z: -2.1988528}
+    m_Value: {x: 800.4486, y: 612.65533, z: -4.7620144}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -857,9 +857,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 394.82593
+    m_Target: 717.97736
     speed: 2
-    m_Value: 413.4303
+    m_Value: 717.97736
   m_Ortho:
     m_Target: 1
     speed: 2

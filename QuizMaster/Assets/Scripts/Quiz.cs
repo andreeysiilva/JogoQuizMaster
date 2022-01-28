@@ -6,22 +6,60 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
+    [Header("Perguntas")]
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] QuestionSO question;
+
+    [Header("Respostas")]
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
+    bool hasAnsweredEarly;
+
+    [Header("Cor dos Botões")]
     [SerializeField] Sprite defaultAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
 
+    [Header("Cronometro")]
+    [SerializeField] Image timerImage;
+    Timer timer;
+
+
     void Start()
     {
+        timer = FindObjectOfType<Timer>();
         GetNextQuestion();
         //DisplayQuestion();
     }
 
-    public void onAnswerSelected(int index) {
+    void Update()
+    {
+        timerImage.fillAmount = timer.fillFraction;
+        if (timer.loadNextQuestion)
         {
-            Image buttonImage;
+            hasAnsweredEarly = false;
+            GetNextQuestion();
+            timer.loadNextQuestion = false;
+        }
+        else if(!hasAnsweredEarly && !timer.isAnsweringQuestion)
+        {
+            DisplayAnswer(-1);
+            SetButtonState(false);
+        }
+    }
+
+    public void onAnswerSelected(int index)
+    {
+        {
+            hasAnsweredEarly = true;
+            DisplayAnswer(index);
+            SetButtonState(false);
+            timer.CancelTimer();
+        }
+    }
+
+    void DisplayAnswer(int index)
+    {
+        Image buttonImage;
             
             if (index == question.GetCorrectAnswerIndex())
             {
@@ -37,9 +75,6 @@ public class Quiz : MonoBehaviour
                 buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
                 buttonImage.sprite = correctAnswerSprite;
             }
-
-            SetButtonState(false);
-        }
     }
 
     void GetNextQuestion()
@@ -76,7 +111,6 @@ public class Quiz : MonoBehaviour
         {
             Image buttonImage = answerButtons[i].GetComponent<Image>();
             buttonImage.sprite = defaultAnswerSprite;
-
         }
     }
 }
