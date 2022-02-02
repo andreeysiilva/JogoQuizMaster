@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
   m_Name: Question 4
   m_EditorClassIdentifier: 
-  question: "Ao analisar o potencial art\xEDstico das crian\xE7as, Antunes (2012)
-    afirma que a fase pict\xF3rica come\xE7a efetivamente entre a idade de _________
-    anos."
+  question: "Que organiza\xE7\xE3o juvenil foi fundado por Baden-Powell?"
   answers:
-  - "dois a tr\xEAs "
-  - "tr\xEAs a quatro "
-  - cinco a seis
-  - sete a oito
-  - quatro a cinco
-  correctAnswerIndex: 5
+  - a) O escotismo
+  - b) A juventude socialista
+  - c) O clube dos aventureiros
+  - "d) A associa\xE7\xE3o juvenil"
+  - "e) A Organiza\xE7\xE3o mundial da juventude"
+  correctAnswerIndex: 0

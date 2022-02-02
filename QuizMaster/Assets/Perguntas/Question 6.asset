@@ -12,16 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
   m_Name: Question 6
   m_EditorClassIdentifier: 
-  question: "Utilizar o material dourado (caixa com pe\xE7as representando unidades,
-    dezenas, centenas, para a interpreta\xE7\xE3o f\xEDsica das opera\xE7\xF5es matem\xE1ticas,
-    etc), \xE9 uma a\xE7\xE3o utilizada na Educa\xE7\xE3o Infantil com o intuito
-    de:  "
+  question: "Quais as duas datas que s\xE3o comemoradas em novembro?"
   answers:
-  - "Propiciar situa\xE7\xF5es reais e hipot\xE9ticas para que os alunos resolvam
-    problemas; "
-  - "Utilizar a tecnologia da informa\xE7\xE3o e comunica\xE7\xE3o como recurso did\xE1ticopedag\xF3gico;"
-  - "Usar diferentes espa\xE7os na escola e na comunidade para atividades pedag\xF3gicas;"
-  - "Promover contato dos alunos com diferentes g\xEAneros e portadores de texto;"
-  - " Manter um registro do desempenho dos alunos e se apoiar nele para planejar
-    interven\xE7\xF5es pedag\xF3gicas. "
-  correctAnswerIndex: 0
+  - "a) Independ\xEAncia do Brasil e Dia da Bandeira"
+  - "b) Proclama\xE7\xE3o da Rep\xFAblica e Dia Nacional da Consci\xEAncia Negra"
+  - "c) Dia do M\xE9dico e Dia de S\xE3o Lucas"
+  - d) Dia de Finados e Dia Nacional do Livro
+  - "e) Black Friday e Dia da \xC1rvore "
+  correctAnswerIndex: 1

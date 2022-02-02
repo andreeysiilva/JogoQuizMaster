@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
   m_Name: Question 9
   m_EditorClassIdentifier: 
-  question: "Na educa\xE7\xE3o infantil a brincadeira constitui-se principalmente
-    em uma atividade que:"
+  question: "Quais os nomes dos tr\xEAs Reis Magos?"
   answers:
-  - Pouco contribui para o desenvolvimento cognitivo infantil.
-  - "Contribui somente para o desenvolvimento psicomotor da crian\xE7a."
-  - Promove conflitos e por isso deve ser sempre controlada pelo professor.
-  - "Deve fazer parte do planejamento do professor pois \xE9 uma forma da crian\xE7a
-    se estruturar como sujeito da emo\xE7\xE3o e da raz\xE3o. "
-  correctAnswerIndex: 3
+  - a) Gaspar, Nicolau e Natanael
+  - b) Belchior, Gaspar e Nataniel
+  - c) Gabriel, Benjamim e Melchior
+  - "d) Melchior, No\xE9 e Galileu"
+  - e) Belchior, Gaspar e Baltazar
+  correctAnswerIndex: 4

@@ -15,9 +15,9 @@ MonoBehaviour:
   question: "Participa\xE7\xE3o em atividades pedag\xF3gicas na escola e extracurriculares,
     excluindo aquelas ligadas a entidades estudantis."
   answers:
-  - "prazer \u2013 simboliza\xE7\xE3o \u2013 cria\xE7\xE3o"
-  - "representa\xE7\xE3o \u2013 a\xE7\xE3o \u2013 submiss\xE3o"
-  - "repeti\xE7\xE3o \u2013 intera\xE7\xE3o \u2013 organiza\xE7\xE3o"
-  - "descoberta \u2013 passividade \u2013 reflex\xE3o"
-  - "estimula\xE7\xE3o \u2013 aliena\xE7\xE3o \u2013 socializa\xE7\xE3o"
+  - "a) prazer \u2013 simboliza\xE7\xE3o \u2013 cria\xE7\xE3o"
+  - "b) representa\xE7\xE3o \u2013 a\xE7\xE3o \u2013 submiss\xE3o"
+  - "c) repeti\xE7\xE3o \u2013 intera\xE7\xE3o \u2013 organiza\xE7\xE3o"
+  - "d) descoberta \u2013 passividade \u2013 reflex\xE3o"
+  - "e) estimula\xE7\xE3o \u2013 aliena\xE7\xE3o \u2013 socializa\xE7\xE3o"
   correctAnswerIndex: 2

@@ -12,15 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
   m_Name: Question 2
   m_EditorClassIdentifier: 
-  question: "O Estatuto da Crian\xE7a e do Adolescente (ECA) assegura \xE0 crian\xE7a
-    e ao adolescente o direito \xE0 educa\xE7\xE3o.\nUm outro direito garantido pelo
-    ECA \xE9: "
+  question: "Normalmente, quantos litros de sangue uma pessoa tem? Em m\xE9dia, quantos
+    s\xE3o retirados numa doa\xE7\xE3o de sangue?"
   answers:
-  - "cente, desde que fa\xE7a por merecer.ue fa\xE7a por merecer."
-  - "Igualdade de condi\xE7\xF5es para acesso e perman\xEAncia na escola."
-  - "Acesso \xE0 escola p\xFAblica e gratuita, respeitando a exist\xEAncia de vaga."
-  - "Contesta\xE7\xE3o de crit\xE9rios de avalia\xE7\xE3o no \xE2mbito da pr\xF3pria
-    unidade escolar."
-  - "Participa\xE7\xE3o em atividades pedag\xF3gicas na escola e extracurriculares,
-    excluindo aquelas ligadas a entidades estudantis."
-  correctAnswerIndex: 2
+  - "a) Tem entre 2 a 4 litros. S\xE3o retirados 450 mililitros"
+  - "b) Tem entre 4 a 6 litros. S\xE3o retirados 450 mililitros"
+  - "c) Tem 10 litros. S\xE3o retirados 2 litros"
+  - "d) Tem 7 litros. S\xE3o retirados 1,5 litros"
+  - "e) Tem 0,5 litros. S\xE3o retirados 0,5 litros"
+  correctAnswerIndex: 1

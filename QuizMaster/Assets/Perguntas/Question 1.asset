@@ -16,9 +16,9 @@ MonoBehaviour:
     Base.\n3. Microsoft Access.\n4. OneDrive.\nS\xE3o servi\xE7os de armazenamento
     na nuvem:"
   answers:
-  - 1, 2, 3 e 4.
-  - 1 e 3 apenas.
-  - 1 e 4 apenas.
-  - 2, 3 e 4 apenas.
-  - 2 e 3 apenas.
+  - a) 1, 2, 3 e 4.
+  - b) 1 e 3 apenas.
+  - c) 1 e 4 apenas.
+  - d) 2, 3 e 4 apenas.
+  - e) 2 e 3 apenas.
   correctAnswerIndex: 2

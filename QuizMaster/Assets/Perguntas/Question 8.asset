@@ -12,18 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8efc22455a645ce9daee34d525d6600c, type: 3}
   m_Name: Question 8
   m_EditorClassIdentifier: 
-  question: "Em 11 de abril de 2019, foi publicado o Decreto n\xBA 9.765, que institui
-    a Pol\xEDtica Nacional de Alfabetiza\xE7\xE3o, na qual consta a express\xE3o
-    literacia, que significa: "
+  question: "Quais destas doen\xE7as s\xE3o sexualmente transmiss\xEDveis?"
   answers:
-  - "Conjunto de conhecimentos, habilidades e atitudes relacionados \xE0 leitura
-    e \xE0 escrita, bem como sua pr\xE1tica produtiva. "
-  - "Conjunto de letras do sistema alfab\xE9tico."
-  - "Conjunto de obras liter\xE1rias de reconhecido valor est\xE9tico, pertencentes
-    a um pa\xEDs, \xE9poca e g\xEAnero."
-  - " Habilidade de sustentar e operar mentalmente as informa\xE7\xF5es, quer sejam
-    auditivas/verbais, quer sejam visuoespaciais."
-  - "Maneira mais simples de ler palavras. Tenta-se \u201Cadivinhar\u201D a palavra
-    escrita por meio do contexto ou pela presen\xE7a de alguns elementos conhecidos,
-    como as letras iniciais. "
-  correctAnswerIndex: 0
+  - "a) Aids, tricomon\xEDase e ebola"
+  - b) Chikungunya, aids e herpes genital
+  - "c) Gonorreia, clam\xEDdia e s\xEDfilis"
+  - d) Botulismo, cistite e gonorreia
+  - "e) Hepatite B, febre tifoide e hansen\xEDase"
+  correctAnswerIndex: 2

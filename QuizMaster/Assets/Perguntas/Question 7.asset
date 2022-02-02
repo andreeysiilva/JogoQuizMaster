@@ -16,9 +16,9 @@ MonoBehaviour:
     de criar algo, como fazer um castelo de areia ou uma torre com blocos, ela est\xE1
     envolvida: "
   answers:
-  - No jogo de regras.
-  - "Na hora do jogo (psicopedag\xF3gica)."
-  - "Na t\xE9cnica projetiva."
-  - "No jogo de exerc\xEDcio."
-  - "No jogo de constru\xE7\xE3o."
+  - a) No jogo de regras.
+  - "b) Na hora do jogo (psicopedag\xF3gica)."
+  - "c) Na t\xE9cnica projetiva."
+  - "d) No jogo de exerc\xEDcio."
+  - "e) No jogo de constru\xE7\xE3o."
   correctAnswerIndex: 4
