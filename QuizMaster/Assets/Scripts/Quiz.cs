@@ -24,10 +24,22 @@ public class Quiz : MonoBehaviour
     [SerializeField] Image timerImage;
     Timer timer;
 
+    [Header("Pontuação")]
+    [SerializeField] TextMeshProUGUI scoreText;
+    ScoreKeeper scoreKeeper;
+
+    [Header("Barra de Progresso")]
+    [SerializeField] Slider progressBar;
+
+    public bool isComplete;
+
 
     void Start()
     {
         timer = FindObjectOfType<Timer>();
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        progressBar.maxValue = questions.Count;
+        progressBar.value = 0;
     }
 
     void Update()
@@ -53,6 +65,12 @@ public class Quiz : MonoBehaviour
             DisplayAnswer(index);
             SetButtonState(false);
             timer.CancelTimer();
+            scoreText.text = $"Score: {scoreKeeper.CalculateScore()}%";
+
+            if (progressBar.value == progressBar.maxValue)
+            {
+                isComplete = true;
+            }
         }
     }
 
@@ -65,6 +83,7 @@ public class Quiz : MonoBehaviour
                 questionText.text = "Correto!";
                 buttonImage = answerButtons[index].GetComponent<Image>();
                 buttonImage.sprite = correctAnswerSprite;
+                scoreKeeper.IncrementCorrectAnswers();
             }
             else
             {
@@ -84,6 +103,8 @@ public class Quiz : MonoBehaviour
             SetDefaultButtonSprites();
             GetRandomQuestion();
             DisplayQuestion();
+            progressBar.value++;
+            scoreKeeper.IncrementQuestionsSeen();
         }
     }
 
