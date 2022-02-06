@@ -6,35 +6,34 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
-    [Header("Perguntas")]
+    [Header("Questions")]
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] List<QuestionSO> questions = new List<QuestionSO>();
     QuestionSO currentQuestion;
 
-    [Header("Respostas")]
+    [Header("Answers")]
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
-    bool hasAnsweredEarly;
+    bool hasAnsweredEarly = true;
 
-    [Header("Cor dos Botões")]
+    [Header("Button Colors")]
     [SerializeField] Sprite defaultAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
 
-    [Header("Cronometro")]
+    [Header("Timer")]
     [SerializeField] Image timerImage;
     Timer timer;
 
-    [Header("Pontuação")]
+    [Header("Scoring")]
     [SerializeField] TextMeshProUGUI scoreText;
     ScoreKeeper scoreKeeper;
 
-    [Header("Barra de Progresso")]
+    [Header("ProgressBar")]
     [SerializeField] Slider progressBar;
 
     public bool isComplete;
 
-
-    void Start()
+    void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
@@ -47,11 +46,17 @@ public class Quiz : MonoBehaviour
         timerImage.fillAmount = timer.fillFraction;
         if (timer.loadNextQuestion)
         {
+            if (progressBar.value == progressBar.maxValue)
+            {
+                isComplete = true;
+                return;
+            }
+
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
         }
-        else if(!hasAnsweredEarly && !timer.isAnsweringQuestion)
+        else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
         {
             DisplayAnswer(-1);
             SetButtonState(false);
@@ -60,39 +65,31 @@ public class Quiz : MonoBehaviour
 
     public void OnAnswerSelected(int index)
     {
-        {
-            hasAnsweredEarly = true;
-            DisplayAnswer(index);
-            SetButtonState(false);
-            timer.CancelTimer();
-            scoreText.text = $"Score: {scoreKeeper.CalculateScore()}%";
-
-            if (progressBar.value == progressBar.maxValue)
-            {
-                isComplete = true;
-            }
-        }
+        hasAnsweredEarly = true;
+        DisplayAnswer(index);
+        SetButtonState(false);
+        timer.CancelTimer();
+        scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
     }
 
     void DisplayAnswer(int index)
     {
         Image buttonImage;
-            
-            if (index == currentQuestion.GetCorrectAnswerIndex())
-            {
-                questionText.text = "Correto!";
-                buttonImage = answerButtons[index].GetComponent<Image>();
-                buttonImage.sprite = correctAnswerSprite;
-                scoreKeeper.IncrementCorrectAnswers();
-            }
-            else
-            {
-                correctAnswerIndex = currentQuestion.GetCorrectAnswerIndex();
-                string correctAnswer = currentQuestion.GetAnswer(correctAnswerIndex);
-                questionText.text = "Resposta errada, resposta correta é \n" + correctAnswer;
-                buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
-                buttonImage.sprite = correctAnswerSprite;
-            }
+        if (index == currentQuestion.GetCorrectAnswerIndex())
+        {
+            questionText.text = "Correct!";
+            buttonImage = answerButtons[index].GetComponent<Image>();
+            buttonImage.sprite = correctAnswerSprite;
+            scoreKeeper.IncrementCorrectAnswers();
+        }
+        else
+        {
+            correctAnswerIndex = currentQuestion.GetCorrectAnswerIndex();
+            string correctAnswer = currentQuestion.GetAnswer(correctAnswerIndex);
+            questionText.text = "Sorry, the correct answer was;\n" + correctAnswer;
+            buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
+            buttonImage.sprite = correctAnswerSprite;
+        }
     }
 
     void GetNextQuestion()
@@ -138,7 +135,6 @@ public class Quiz : MonoBehaviour
             button.interactable = state;
         }
     }
-
 
     void SetDefaultButtonSprites()
     {
